@@ -153,6 +153,7 @@ int main(void)
     	HAL_GPIO_WritePin(LED_GREEN_Y_GPIO_Port, LED_GREEN_Y_Pin, RESET);
 
     	// update state
+	count++;
     	if (count >= 8) {
     		state = RedX_YellowY;
     	}
