@@ -1,0 +1,6 @@
+main.c:58:6:encodeBinX	16	static
+main.c:135:6:encodeBinY	16	static
+main.c:219:5:main	16	static
+main.c:350:6:SystemClock_Config	72	static
+main.c:386:13:MX_GPIO_Init	32	static
+main.c:430:6:Error_Handler	4	static,ignoring_inline_asm
