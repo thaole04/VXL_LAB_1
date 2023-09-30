@@ -72,6 +72,9 @@ void clearAllClock() {
 void setNumberOnClock(int num){
 	  switch (num)
 	  {
+	  case 0:
+		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
+		  break;
 	  case 1:
 		  HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, RESET);
 		  break;
@@ -104,9 +107,6 @@ void setNumberOnClock(int num){
 		  break;
 	  case 11:
 		  HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, RESET);
-		  break;
-	  case 12:
-		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
 		  break;
 	  default:
 		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
@@ -155,6 +155,9 @@ int main(void)
   {
 	  switch (count)
 	  {
+	  case 0:
+		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
+		  break;
 	  case 1:
 		  HAL_GPIO_TogglePin(ONE_GPIO_Port, ONE_Pin);
 		  break;
@@ -187,9 +190,6 @@ int main(void)
 		  break;
 	  case 11:
 		  HAL_GPIO_TogglePin(ELEVEN_GPIO_Port, ELEVEN_Pin);
-		  break;
-	  case 12:
-		  HAL_GPIO_TogglePin(TWELVE_GPIO_Port, TWELVE_Pin);
 		  break;
 	  default:
 		  HAL_GPIO_TogglePin(TWELVE_GPIO_Port, TWELVE_Pin);
