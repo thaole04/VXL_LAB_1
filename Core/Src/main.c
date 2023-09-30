@@ -110,6 +110,9 @@ int main(void)
   {
 	  switch (count)
 	  {
+	  case 0:
+		  HAL_GPIO_TogglePin(TWELVE_GPIO_Port, TWELVE_Pin);
+		  break;
 	  case 1:
 		  HAL_GPIO_TogglePin(ONE_GPIO_Port, ONE_Pin);
 		  break;
@@ -142,9 +145,6 @@ int main(void)
 		  break;
 	  case 11:
 		  HAL_GPIO_TogglePin(ELEVEN_GPIO_Port, ELEVEN_Pin);
-		  break;
-	  case 12:
-		  HAL_GPIO_TogglePin(TWELVE_GPIO_Port, TWELVE_Pin);
 		  break;
 	  default:
 		  HAL_GPIO_TogglePin(TWELVE_GPIO_Port, TWELVE_Pin);
