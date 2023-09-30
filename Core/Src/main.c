@@ -197,7 +197,7 @@ int main(void)
 	  }
 	  HAL_Delay(100);
 	  count++;
-	  if (count >= 13){
+	  if (count >= 12){
 		  count = 1;
 	  }
 
