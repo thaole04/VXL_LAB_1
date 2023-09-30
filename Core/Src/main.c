@@ -55,109 +55,109 @@ static void MX_GPIO_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 void clearAllClock() {
-  HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, SET);
-  HAL_GPIO_WritePin(TWO_GPIO_Port, TWO_Pin, SET);
-  HAL_GPIO_WritePin(THREE_GPIO_Port, THREE_Pin, SET);
-  HAL_GPIO_WritePin(FOUR_GPIO_Port, FOUR_Pin, SET);
-  HAL_GPIO_WritePin(FIVE_GPIO_Port, FIVE_Pin, SET);
-  HAL_GPIO_WritePin(SIX_GPIO_Port, SIX_Pin, SET);
-  HAL_GPIO_WritePin(SEVEN_GPIO_Port, SEVEN_Pin, SET);
-  HAL_GPIO_WritePin(EIGHT_GPIO_Port, EIGHT_Pin, SET);
-  HAL_GPIO_WritePin(NINE_GPIO_Port, NINE_Pin, SET);
-  HAL_GPIO_WritePin(TEN_GPIO_Port, TEN_Pin, SET);
-  HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, SET);
-  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, SET);
-  return;
+	HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, SET);
+	HAL_GPIO_WritePin(TWO_GPIO_Port, TWO_Pin, SET);
+	HAL_GPIO_WritePin(THREE_GPIO_Port, THREE_Pin, SET);
+	HAL_GPIO_WritePin(FOUR_GPIO_Port, FOUR_Pin, SET);
+	HAL_GPIO_WritePin(FIVE_GPIO_Port, FIVE_Pin, SET);
+	HAL_GPIO_WritePin(SIX_GPIO_Port, SIX_Pin, SET);
+	HAL_GPIO_WritePin(SEVEN_GPIO_Port, SEVEN_Pin, SET);
+	HAL_GPIO_WritePin(EIGHT_GPIO_Port, EIGHT_Pin, SET);
+	HAL_GPIO_WritePin(NINE_GPIO_Port, NINE_Pin, SET);
+	HAL_GPIO_WritePin(TEN_GPIO_Port, TEN_Pin, SET);
+	HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, SET);
+	HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, SET);
+	return;
 }
 
 void setNumberOnClock(int num){
-	  switch (num)
-	  {
-	  case 1:
-		  HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, RESET);
-		  break;
-	  case 2:
-		  HAL_GPIO_WritePin(TWO_GPIO_Port, TWO_Pin, RESET);
-		  break;
-	  case 3:
-		  HAL_GPIO_WritePin(THREE_GPIO_Port, THREE_Pin, RESET);
-		  break;
-	  case 4:
-		  HAL_GPIO_WritePin(FOUR_GPIO_Port, FOUR_Pin, RESET);
-		  break;
-	  case 5:
-		  HAL_GPIO_WritePin(FIVE_GPIO_Port, FIVE_Pin, RESET);
-		  break;
-	  case 6:
-		  HAL_GPIO_WritePin(SIX_GPIO_Port, SIX_Pin, RESET);
-		  break;
-	  case 7:
-		  HAL_GPIO_WritePin(SEVEN_GPIO_Port, SEVEN_Pin, RESET);
-		  break;
-	  case 8:
-		  HAL_GPIO_WritePin(EIGHT_GPIO_Port, EIGHT_Pin, RESET);
-		  break;
-	  case 9:
-		  HAL_GPIO_WritePin(NINE_GPIO_Port, NINE_Pin, RESET);
-		  break;
-	  case 10:
-		  HAL_GPIO_WritePin(TEN_GPIO_Port, TEN_Pin, RESET);
-		  break;
-	  case 11:
-		  HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, RESET);
-		  break;
-	  case 12:
-		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
-		  break;
-	  default:
-		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
-		  break;
-	  }
+	switch (num)
+	{
+	case 0:
+	  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
+	  break;
+	case 1:
+	  HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, RESET);
+	  break;
+	case 2:
+	  HAL_GPIO_WritePin(TWO_GPIO_Port, TWO_Pin, RESET);
+	  break;
+	case 3:
+	  HAL_GPIO_WritePin(THREE_GPIO_Port, THREE_Pin, RESET);
+	  break;
+	case 4:
+	  HAL_GPIO_WritePin(FOUR_GPIO_Port, FOUR_Pin, RESET);
+	  break;
+	case 5:
+	  HAL_GPIO_WritePin(FIVE_GPIO_Port, FIVE_Pin, RESET);
+	  break;
+	case 6:
+	  HAL_GPIO_WritePin(SIX_GPIO_Port, SIX_Pin, RESET);
+	  break;
+	case 7:
+	  HAL_GPIO_WritePin(SEVEN_GPIO_Port, SEVEN_Pin, RESET);
+	  break;
+	case 8:
+	  HAL_GPIO_WritePin(EIGHT_GPIO_Port, EIGHT_Pin, RESET);
+	  break;
+	case 9:
+	  HAL_GPIO_WritePin(NINE_GPIO_Port, NINE_Pin, RESET);
+	  break;
+	case 10:
+	  HAL_GPIO_WritePin(TEN_GPIO_Port, TEN_Pin, RESET);
+	  break;
+	case 11:
+	  HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, RESET);
+	  break;
+	default:
+	  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
+	  break;
+	}
 }
 
 void clearNumberOnClock(int num){
-	  switch (num)
-	  {
-	  case 1:
-		  HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, SET);
-		  break;
-	  case 2:
-		  HAL_GPIO_WritePin(TWO_GPIO_Port, TWO_Pin, SET);
-		  break;
-	  case 3:
-		  HAL_GPIO_WritePin(THREE_GPIO_Port, THREE_Pin, SET);
-		  break;
-	  case 4:
-		  HAL_GPIO_WritePin(FOUR_GPIO_Port, FOUR_Pin, SET);
-		  break;
-	  case 5:
-		  HAL_GPIO_WritePin(FIVE_GPIO_Port, FIVE_Pin, SET);
-		  break;
-	  case 6:
-		  HAL_GPIO_WritePin(SIX_GPIO_Port, SIX_Pin, SET);
-		  break;
-	  case 7:
-		  HAL_GPIO_WritePin(SEVEN_GPIO_Port, SEVEN_Pin, SET);
-		  break;
-	  case 8:
-		  HAL_GPIO_WritePin(EIGHT_GPIO_Port, EIGHT_Pin, SET);
-		  break;
-	  case 9:
-		  HAL_GPIO_WritePin(NINE_GPIO_Port, NINE_Pin, SET);
-		  break;
-	  case 10:
-		  HAL_GPIO_WritePin(TEN_GPIO_Port, TEN_Pin, SET);
-		  break;
-	  case 11:
-		  HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, SET);
-		  break;
-	  case 12:
-		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, SET);
-		  break;
-	  default:
-		  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, SET);
-		  break;
-	  }
+	switch (num)
+	{
+	case 0:
+	  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, RESET);
+	  break;
+	case 1:
+	  HAL_GPIO_WritePin(ONE_GPIO_Port, ONE_Pin, SET);
+	  break;
+	case 2:
+	  HAL_GPIO_WritePin(TWO_GPIO_Port, TWO_Pin, SET);
+	  break;
+	case 3:
+	  HAL_GPIO_WritePin(THREE_GPIO_Port, THREE_Pin, SET);
+	  break;
+	case 4:
+	  HAL_GPIO_WritePin(FOUR_GPIO_Port, FOUR_Pin, SET);
+	  break;
+	case 5:
+	  HAL_GPIO_WritePin(FIVE_GPIO_Port, FIVE_Pin, SET);
+	  break;
+	case 6:
+	  HAL_GPIO_WritePin(SIX_GPIO_Port, SIX_Pin, SET);
+	  break;
+	case 7:
+	  HAL_GPIO_WritePin(SEVEN_GPIO_Port, SEVEN_Pin, SET);
+	  break;
+	case 8:
+	  HAL_GPIO_WritePin(EIGHT_GPIO_Port, EIGHT_Pin, SET);
+	  break;
+	case 9:
+	  HAL_GPIO_WritePin(NINE_GPIO_Port, NINE_Pin, SET);
+	  break;
+	case 10:
+	  HAL_GPIO_WritePin(TEN_GPIO_Port, TEN_Pin, SET);
+	  break;
+	case 11:
+	  HAL_GPIO_WritePin(ELEVEN_GPIO_Port, ELEVEN_Pin, SET);
+	  break;
+	default:
+	  HAL_GPIO_WritePin(TWELVE_GPIO_Port, TWELVE_Pin, SET);
+	  break;
+	}
 }
 
 /* USER CODE END 0 */
@@ -197,39 +197,32 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   int hour = 0;
-    int minute = 0;
-    int second = 0;
-    while (1)
-    {
-  	  /* setNumberOnClock(count);
-  	  HAL_Delay(1000);
-  	  clearNumberOnClock(count);
-  	  count++;
-  	  if (count >= 13){
-  		  count = 1;
-  	  } */
-  	  if (second >= 60) {
-  		second = 0;
-  		minute++;
-  	  }
-  	  if (minute >= 60) {
-  		minute = 0;
-  		hour++;
-  	  }
-  	  if (hour >= 12) {
-  		hour = 0;
-  	  }
-  	  clearAllClock();
-  	  setNumberOnClock(second/5);
-  	  setNumberOnClock(minute/5);
-  	  setNumberOnClock(hour);
-  	  HAL_Delay(1000);
-  	  second++;
-      /* USER CODE END WHILE */
-
-      /* USER CODE BEGIN 3 */
-    }
-    /* USER CODE END 3 */
+  int minute = 0;
+  int second = 0;
+  while (1)
+  {
+	if (second >= 60) {
+	second = 0;
+	minute++;
+	}
+	if (minute >= 60) {
+	minute = 0;
+	hour++;
+	}
+	if (hour >= 12) {
+	hour = 0;
+	}
+	clearAllClock();
+	setNumberOnClock(second/5);
+	setNumberOnClock(minute/5);
+	setNumberOnClock(hour);
+	HAL_Delay(1000);
+	second++;
+	/* USER CODE END WHILE */
+	
+	/* USER CODE BEGIN 3 */
+  }
+/* USER CODE END 3 */
 }
 
 /**
